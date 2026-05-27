@@ -1,0 +1,59 @@
+# .clang-format
+# Linux/Linus style tanpa tab
+# Brace tidak pakai Allman
+
+BasedOnStyle: LLVM
+
+Language: Cpp
+Standard: Latest
+
+# Indentasi
+UseTab: Never
+IndentWidth: 8
+ContinuationIndentWidth: 8
+TabWidth: 8
+
+# Brace style
+BreakBeforeBraces: Attach
+
+BraceWrapping:
+  AfterFunction: false
+  AfterControlStatement: false
+  AfterClass: false
+  AfterStruct: false
+  AfterEnum: false
+  BeforeElse: true
+  BeforeCatch: true
+
+# Pointer
+PointerAlignment: Right
+
+# Panjang baris
+ColumnLimit: 80
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Short statements
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+
+# Switch
+IndentCaseLabels: false
+
+# Includes
+SortIncludes: false
+
+# Alignment
+AlignOperands: false
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+# Comments
+ReflowComments: false
+
+# Empty lines
+MaxEmptyLinesToKeep: 2
