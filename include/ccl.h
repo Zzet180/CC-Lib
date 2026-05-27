@@ -102,7 +102,7 @@
         }                                                                                          \
     }                                                                                              \
                                                                                                    \
-    static inline Name Name##_copy(Name *src) {                                                    \
+    static inline Name Name##_clone(Name *src) {                                                    \
         Name list = Name##_new();                                                                  \
         for (size_t i = 0; i < src->size; i++) {                                                   \
             Name##_push(&list, src->data[i]);                                                      \

@@ -9,8 +9,12 @@ CCS_BUILD_UTILS()
 
 
 int main() {
-    String name = String_Input("Masukkan Namamu: ");
-    name = String_TrimChar(&name, 'A');
+    String name = String_FromCstr("Daniel Alonso");
+    name = String_ToLowerCase(&name);
+    String hint = String_FromCstr("lonso");
+    if (String_EndsWith(&name, &hint)) {
+        printf("Hello Daniel");
+    }
     String_print(&name, '\n');
     printf("%s\n", String_ToCstr(&name));
     return 0;
